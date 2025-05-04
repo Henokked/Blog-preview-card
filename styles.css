@@ -1,69 +1,75 @@
-*{
-    font-family: "Outfit", sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color:  hsl(47, 88%, 63%);
-    /* min-height: 100vh; */
+body {
+  background-color: hsl(47, 88%, 63%);
+  /* height: 100vh; */
 }
-.container{
-    background-color: white;
-    width: 320px;
-    border-radius: 20px;
-    padding: 16px;
-    border: 2px solid black;
-    box-shadow: 4px 4px 0px black;
-    margin: auto;
-    margin-top: 200px;
+.container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: white;
+  width: 21em;
+  border-radius: 20px;
+  padding: 16px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 0px black;
+  margin: auto;
+  margin-top: 200px;
+
+  transition: box-shadow 0.3s ease;
 }
 
-.container:hover{
-    box-shadow: 10px 10px 0px black;
-    
+.container:hover {
+  box-shadow: 10px 10px 0px black;
 }
 
+.maintitle:hover {
+  color: orange;
+  cursor: pointer;
+}
 
+.bg {
+  width: 100%;
+  border-radius: 10px;
+}
+.title {
+  background-color: rgb(255, 204, 0);
+  display: inline-block;
+  padding: 4px;
+  border-radius: 4px;
+  margin: 16px 0px 16px 0px;
+  font-size: 12px;
+}
+.date {
+  font-size: 12px;
+  color: hsl(0, 0%, 50%);
+  padding-bottom: 16px;
+}
+.maintitle {
+  font-weight: 800;
+  margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+.desc {
+  font-weight: 300;
+  text-align: left;
+  font-size: 15px;
+  color: gray;
+}
+.profile {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  gap: 16px;
+}
 
-.bg{
-    width: 100%;
-    border-radius: 10px;
-}
-.title{
-    background-color: rgb(255, 204, 0);
-    width: fit-content;
-    padding: 4px;
-    border-radius: 4px;
-    margin: 16px 0px 16px 0px;
-    font-size: 12px;
-}
-.date{
-    font-size: 10px;
-    color: hsl(0, 0%, 50%);
-    padding-bottom: 16px;
-}
-.maintitle{
-    font-weight: 800;
-    margin-bottom: 16px;
- 
-}
-.desc{
-    font-weight: 300;
-    text-align: left;
-    font-size: 15px;
-    color: gray;
-}
-.profile{
-    margin-top: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: 600;
-}
-.profile p{
-    padding-left: 24px;
-}
-.profile img{
-    width: 50px;
+.profile img {
+  width: 2.5rem;
 }
